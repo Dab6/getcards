@@ -1,6 +1,13 @@
 from flask import Flask, request, jsonify
 import requests
 import time
+import os
+
+url = os.getenv('API_URL')  # Get the URL from environment variable
+referer = os.getenv('REFERER')  # Get the Referer from environment variable
+
+# Your existing code continues here...
+
 
 app = Flask(__name__)
 
